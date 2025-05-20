@@ -56,10 +56,10 @@ class DebugImageTFLite(Node):
         self.declare_parameter("debug_topic", "/DebugImageReal", 
             debug_image_topic_descriptor)
 
-        self.declare_parameter("tflite_topic", "/TFLiteReal", 
+        self.declare_parameter("tflite_topic", "/CSI2/TFLite", 
             tf_lite_topic_descriptor)
 
-        self.declare_parameter("image_topic", "/NPU/image_real", 
+        self.declare_parameter("image_topic", "/camera/image_raw", 
             image_topic_descriptor)
 
         self.declare_parameter("threshold", 0.3, 
